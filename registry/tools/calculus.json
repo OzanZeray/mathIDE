@@ -1,0 +1,51 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "calculus.diff",
+      "version": "0.1.0",
+      "name": "Differentiation",
+      "category": "calculus",
+      "tags": ["derivative", "differentiate", "diff", "partial", "gradient"],
+      "description": "Compute derivatives of expressions.",
+      "when_to_use": "User asks to differentiate, find derivative, or compute gradient.",
+      "backend": "sympy",
+      "entry_point": "tools/calculus/differentiate.py",
+      "input_schema": {
+        "type": "object",
+        "required": ["expr"],
+        "properties": {
+          "expr":      {"type": "string"},
+          "variable":  {"type": "string", "default": "x"},
+          "order":     {"type": "integer", "default": 1},
+          "variables": {"type": "array", "items": {"type": "string"}, "description": "For mixed partials"},
+          "simplify":  {"type": "boolean", "default": true},
+          "store_as":  {"type": "string"}
+        }
+      }
+    },
+    {
+      "id": "calculus.integrate",
+      "version": "0.1.0",
+      "name": "Integration",
+      "category": "calculus",
+      "tags": ["integral", "integrate", "antiderivative", "definite", "indefinite"],
+      "description": "Compute definite or indefinite integrals.",
+      "when_to_use": "User asks to integrate, find antiderivative, or evaluate a definite integral.",
+      "backend": "sympy",
+      "entry_point": "tools/calculus/integrate.py",
+      "input_schema": {
+        "type": "object",
+        "required": ["expr"],
+        "properties": {
+          "expr":     {"type": "string"},
+          "variable": {"type": "string", "default": "x"},
+          "limits":   {"type": "array", "items": {"type": "string"}, "description": "[lower, upper] or omit for indefinite"},
+          "method":   {"type": "string", "enum": ["auto", "meijerg", "risch", "manual"], "default": "auto"},
+          "simplify": {"type": "boolean", "default": true},
+          "store_as": {"type": "string"}
+        }
+      }
+    }
+  ]
+}

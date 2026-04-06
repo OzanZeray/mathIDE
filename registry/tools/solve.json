@@ -1,0 +1,35 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "solve.equation",
+      "version": "0.1.0",
+      "name": "Equation Solver",
+      "category": "solvers",
+      "tags": ["solve", "equation", "root", "system", "algebraic"],
+      "description": "Solve algebraic equations or systems symbolically.",
+      "backend": "sympy",
+      "entry_point": "tools/solvers/equation.py"
+    },
+    {
+      "id": "solve.ode",
+      "version": "0.1.0",
+      "name": "ODE Solver",
+      "category": "solvers",
+      "tags": ["ode", "differential", "equation", "initial_value"],
+      "description": "Solve ordinary differential equations.",
+      "backend": "sympy",
+      "entry_point": "tools/solvers/ode.py"
+    },
+    {
+      "id": "solve.pde",
+      "version": "0.1.0",
+      "name": "PDE Solver",
+      "category": "solvers",
+      "tags": ["pde", "partial", "differential", "heat", "wave"],
+      "description": "Solve partial differential equations via transform methods.",
+      "backend": "sympy",
+      "entry_point": "tools/solvers/pde.py"
+    }
+  ]
+}

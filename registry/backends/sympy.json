@@ -1,0 +1,20 @@
+{
+  "$schema": "mathide://backend-manifest/v1",
+  "id": "sympy",
+  "version": "1.14",
+  "name": "SymPy",
+  "language": "python",
+  "capabilities": [
+    "symbolic_algebra", "calculus", "series", "transforms",
+    "ode", "pde", "linear_algebra", "assumptions", "latex_output"
+  ],
+  "setup": {
+    "check_command": "python -c \"import sympy; print(sympy.__version__)\"",
+    "install_command": "pip install sympy"
+  },
+  "sandbox": {
+    "timeout_seconds": 30,
+    "blocked_modules": ["os", "sys", "subprocess", "shutil", "socket", "http"],
+    "max_memory_mb": 512
+  }
+}

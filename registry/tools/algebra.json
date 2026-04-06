@@ -1,0 +1,25 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "algebra.simplify",
+      "version": "0.1.0",
+      "name": "Simplification",
+      "category": "algebra",
+      "tags": ["simplify", "reduce", "trig", "factor", "expand", "cancel", "collect"],
+      "description": "Simplify expressions with strategy selection.",
+      "backend": "sympy",
+      "entry_point": "tools/algebra/simplify.py"
+    },
+    {
+      "id": "algebra.substitute",
+      "version": "0.1.0",
+      "name": "Substitution",
+      "category": "algebra",
+      "tags": ["substitute", "replace", "evaluate", "plug_in"],
+      "description": "Substitute variables in expressions.",
+      "backend": "sympy",
+      "entry_point": "tools/algebra/substitute.py"
+    }
+  ]
+}

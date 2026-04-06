@@ -1,0 +1,251 @@
+{
+  "version": "0.1.0",
+  "generated_at": "2026-04-06T14:57:02.518523+00:00",
+  "tools": {
+    "algebra.simplify": {
+      "manifest": "registry/tools/algebra.json",
+      "category": "algebra",
+      "tags": [
+        "simplify",
+        "reduce",
+        "trig",
+        "factor",
+        "expand",
+        "cancel",
+        "collect"
+      ]
+    },
+    "algebra.substitute": {
+      "manifest": "registry/tools/algebra.json",
+      "category": "algebra",
+      "tags": [
+        "substitute",
+        "replace",
+        "evaluate",
+        "plug_in"
+      ]
+    },
+    "calculus.diff": {
+      "manifest": "registry/tools/calculus.json",
+      "category": "calculus",
+      "tags": [
+        "derivative",
+        "differentiate",
+        "diff",
+        "partial",
+        "gradient"
+      ]
+    },
+    "calculus.integrate": {
+      "manifest": "registry/tools/calculus.json",
+      "category": "calculus",
+      "tags": [
+        "integral",
+        "integrate",
+        "antiderivative",
+        "definite",
+        "indefinite"
+      ]
+    },
+    "workspace.store": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "infrastructure",
+      "tags": [
+        "store",
+        "save",
+        "workspace",
+        "name",
+        "define"
+      ]
+    },
+    "workspace.load": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "infrastructure",
+      "tags": [
+        "load",
+        "retrieve",
+        "workspace",
+        "recall"
+      ]
+    },
+    "workspace.list": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "infrastructure",
+      "tags": [
+        "list",
+        "workspace",
+        "show",
+        "variables"
+      ]
+    },
+    "assumptions.declare": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "infrastructure",
+      "tags": [
+        "assume",
+        "assumptions",
+        "real",
+        "positive",
+        "integer",
+        "symbol"
+      ]
+    },
+    "verify.identity": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "verification",
+      "tags": [
+        "verify",
+        "check",
+        "identity",
+        "equality",
+        "prove"
+      ]
+    },
+    "render.latex": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "output",
+      "tags": [
+        "latex",
+        "render",
+        "format",
+        "display"
+      ]
+    },
+    "compute.raw": {
+      "manifest": "registry/tools/infrastructure.json",
+      "category": "general",
+      "tags": [
+        "compute",
+        "raw",
+        "sympy",
+        "code",
+        "fallback",
+        "general"
+      ]
+    },
+    "linalg.matrix": {
+      "manifest": "registry/tools/linalg.json",
+      "category": "linear_algebra",
+      "tags": [
+        "matrix",
+        "eigenvalue",
+        "eigenvector",
+        "determinant",
+        "inverse",
+        "jordan",
+        "nullspace",
+        "rank"
+      ]
+    },
+    "series.expand": {
+      "manifest": "registry/tools/series.json",
+      "category": "analysis",
+      "tags": [
+        "taylor",
+        "laurent",
+        "puiseux",
+        "asymptotic",
+        "power_series",
+        "series",
+        "expand"
+      ]
+    },
+    "solve.equation": {
+      "manifest": "registry/tools/solve.json",
+      "category": "solvers",
+      "tags": [
+        "solve",
+        "equation",
+        "root",
+        "system",
+        "algebraic"
+      ]
+    },
+    "solve.ode": {
+      "manifest": "registry/tools/solve.json",
+      "category": "solvers",
+      "tags": [
+        "ode",
+        "differential",
+        "equation",
+        "initial_value"
+      ]
+    },
+    "solve.pde": {
+      "manifest": "registry/tools/solve.json",
+      "category": "solvers",
+      "tags": [
+        "pde",
+        "partial",
+        "differential",
+        "heat",
+        "wave"
+      ]
+    },
+    "transform.fourier": {
+      "manifest": "registry/tools/transform.json",
+      "category": "transforms",
+      "tags": [
+        "fourier",
+        "transform",
+        "frequency",
+        "spectral"
+      ]
+    },
+    "transform.inv_fourier": {
+      "manifest": "registry/tools/transform.json",
+      "category": "transforms",
+      "tags": [
+        "fourier",
+        "inverse",
+        "transform"
+      ]
+    },
+    "transform.laplace": {
+      "manifest": "registry/tools/transform.json",
+      "category": "transforms",
+      "tags": [
+        "laplace",
+        "transform",
+        "control"
+      ]
+    },
+    "transform.inv_laplace": {
+      "manifest": "registry/tools/transform.json",
+      "category": "transforms",
+      "tags": [
+        "laplace",
+        "inverse",
+        "transform"
+      ]
+    },
+    "transform.mellin": {
+      "manifest": "registry/tools/transform.json",
+      "category": "transforms",
+      "tags": [
+        "mellin",
+        "transform"
+      ]
+    },
+    "transform.inv_mellin": {
+      "manifest": "registry/tools/transform.json",
+      "category": "transforms",
+      "tags": [
+        "mellin",
+        "inverse",
+        "transform"
+      ]
+    }
+  },
+  "flows": {},
+  "backends": {
+    "sympy": {
+      "manifest": "registry/backends/sympy.json"
+    }
+  },
+  "renderers": {
+    "markdown_latex": {
+      "manifest": "registry/renderers/markdown_latex.json"
+    }
+  }
+}

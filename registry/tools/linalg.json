@@ -1,0 +1,15 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "linalg.matrix",
+      "version": "0.1.0",
+      "name": "Symbolic Linear Algebra",
+      "category": "linear_algebra",
+      "tags": ["matrix", "eigenvalue", "eigenvector", "determinant", "inverse", "jordan", "nullspace", "rank"],
+      "description": "Symbolic matrix operations: det, inv, eigenvalues, eigenvectors, Jordan form, nullspace, rank.",
+      "backend": "sympy",
+      "entry_point": "tools/linalg/matrix_ops.py"
+    }
+  ]
+}

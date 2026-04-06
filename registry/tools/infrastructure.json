@@ -1,0 +1,75 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "workspace.store",
+      "version": "0.1.0",
+      "name": "Workspace Store",
+      "category": "infrastructure",
+      "tags": ["store", "save", "workspace", "name", "define"],
+      "description": "Store a named expression in the workspace.",
+      "backend": "sympy",
+      "entry_point": "tools/infrastructure/workspace_manager.py"
+    },
+    {
+      "id": "workspace.load",
+      "version": "0.1.0",
+      "name": "Workspace Load",
+      "category": "infrastructure",
+      "tags": ["load", "retrieve", "workspace", "recall"],
+      "description": "Retrieve a named expression from the workspace.",
+      "backend": "sympy",
+      "entry_point": "tools/infrastructure/workspace_manager.py"
+    },
+    {
+      "id": "workspace.list",
+      "version": "0.1.0",
+      "name": "Workspace List",
+      "category": "infrastructure",
+      "tags": ["list", "workspace", "show", "variables"],
+      "description": "List all expressions in the workspace.",
+      "backend": "sympy",
+      "entry_point": "tools/infrastructure/workspace_manager.py"
+    },
+    {
+      "id": "assumptions.declare",
+      "version": "0.1.0",
+      "name": "Declare Assumptions",
+      "category": "infrastructure",
+      "tags": ["assume", "assumptions", "real", "positive", "integer", "symbol"],
+      "description": "Declare symbol assumptions (real, positive, integer, etc.).",
+      "backend": "sympy",
+      "entry_point": "tools/infrastructure/assumption_manager.py"
+    },
+    {
+      "id": "verify.identity",
+      "version": "0.1.0",
+      "name": "Verify Identity",
+      "category": "verification",
+      "tags": ["verify", "check", "identity", "equality", "prove"],
+      "description": "Verify a symbolic identity or equation.",
+      "backend": "sympy",
+      "entry_point": "tools/infrastructure/verify.py"
+    },
+    {
+      "id": "render.latex",
+      "version": "0.1.0",
+      "name": "LaTeX Render",
+      "category": "output",
+      "tags": ["latex", "render", "format", "display"],
+      "description": "Render a SymPy expression as LaTeX.",
+      "backend": "sympy",
+      "entry_point": "tools/output/latex_render.py"
+    },
+    {
+      "id": "compute.raw",
+      "version": "0.1.0",
+      "name": "Raw SymPy Compute",
+      "category": "general",
+      "tags": ["compute", "raw", "sympy", "code", "fallback", "general"],
+      "description": "Execute arbitrary SymPy code in a sandbox. Fallback for operations without a specialized tool.",
+      "backend": "sympy",
+      "entry_point": "tools/infrastructure/sympy_compute.py"
+    }
+  ]
+}

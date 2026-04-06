@@ -1,0 +1,15 @@
+{
+  "$schema": "mathide://renderer-manifest/v1",
+  "id": "markdown_latex",
+  "version": "0.1.0",
+  "name": "Markdown + LaTeX",
+  "file_extension": ".md",
+  "entry_point": "renderers/markdown_latex/render.py",
+  "features": {
+    "math_delimiters": {"inline": "$...$", "display": "$$...$$"},
+    "equation_labels": true,
+    "collapsible_scripts": true,
+    "cross_references": true
+  },
+  "template_dir": "renderers/markdown_latex/templates/"
+}

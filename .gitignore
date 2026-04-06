@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+workspace/state.json
+workspace/sessions/
+workspace/exports/
+research_notes/*.md
+.env

@@ -1,0 +1,60 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "transform.fourier",
+      "version": "0.1.0",
+      "name": "Fourier Transform",
+      "category": "transforms",
+      "tags": ["fourier", "transform", "frequency", "spectral"],
+      "description": "Compute the Fourier transform of an expression.",
+      "backend": "sympy",
+      "entry_point": "tools/transforms/transform.py"
+    },
+    {
+      "id": "transform.inv_fourier",
+      "version": "0.1.0",
+      "name": "Inverse Fourier Transform",
+      "category": "transforms",
+      "tags": ["fourier", "inverse", "transform"],
+      "backend": "sympy",
+      "entry_point": "tools/transforms/transform.py"
+    },
+    {
+      "id": "transform.laplace",
+      "version": "0.1.0",
+      "name": "Laplace Transform",
+      "category": "transforms",
+      "tags": ["laplace", "transform", "control"],
+      "backend": "sympy",
+      "entry_point": "tools/transforms/transform.py"
+    },
+    {
+      "id": "transform.inv_laplace",
+      "version": "0.1.0",
+      "name": "Inverse Laplace Transform",
+      "category": "transforms",
+      "tags": ["laplace", "inverse", "transform"],
+      "backend": "sympy",
+      "entry_point": "tools/transforms/transform.py"
+    },
+    {
+      "id": "transform.mellin",
+      "version": "0.1.0",
+      "name": "Mellin Transform",
+      "category": "transforms",
+      "tags": ["mellin", "transform"],
+      "backend": "sympy",
+      "entry_point": "tools/transforms/transform.py"
+    },
+    {
+      "id": "transform.inv_mellin",
+      "version": "0.1.0",
+      "name": "Inverse Mellin Transform",
+      "category": "transforms",
+      "tags": ["mellin", "inverse", "transform"],
+      "backend": "sympy",
+      "entry_point": "tools/transforms/transform.py"
+    }
+  ]
+}

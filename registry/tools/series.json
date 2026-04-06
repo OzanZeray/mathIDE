@@ -1,0 +1,38 @@
+{
+  "$schema": "mathide://tool-manifest/v1",
+  "tools": [
+    {
+      "id": "series.expand",
+      "version": "0.1.0",
+      "name": "Series Expansion",
+      "category": "analysis",
+      "tags": ["taylor", "laurent", "puiseux", "asymptotic", "power_series", "series", "expand"],
+      "description": "Expand an expression as a series around a point.",
+      "when_to_use": "User asks to expand, approximate, or write as a series.",
+      "backend": "sympy",
+      "entry_point": "tools/series/expand.py",
+      "input_schema": {
+        "type": "object",
+        "required": ["expr"],
+        "properties": {
+          "expr":      {"type": "string", "description": "Expression or workspace ref"},
+          "variable":  {"type": "string", "default": "x"},
+          "point":     {"type": "string", "default": "0"},
+          "order":     {"type": "integer", "default": 6, "minimum": 1},
+          "kind":      {"type": "string", "enum": ["taylor", "laurent", "puiseux", "formal_power", "asymptotic"], "default": "taylor"},
+          "store_as":  {"type": "string", "description": "Workspace name to store result"}
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "result":    {"type": "string"},
+          "latex":     {"type": "string"},
+          "terms":     {"type": "object"},
+          "remainder": {"type": "string"},
+          "success":   {"type": "boolean"}
+        }
+      }
+    }
+  ]
+}
